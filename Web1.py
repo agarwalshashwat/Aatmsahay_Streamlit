@@ -50,11 +50,11 @@ def main():
     st.title('Aatmsahay: Your Home Doc')
     html_temp = '''
     <div style="background-color:blue;padding:10px">
-    <h2 style="color:white;text-align:center;">Enter your symptoms down below</h2>
+    <h2 style="color:white;text-align:center;">Select your symptoms down below</h2>
     </div>
     '''
     st.markdown(html_temp,unsafe_allow_html=True)
-    Symptom_1 = st.selectbox('Primary Symptom',{'Select your primary symptom':0,'Abdominal Pain':'abdominal_pain','Abnormal Menstruation':'abnormal_menstruation','Acidity':'acidity','Acute Liver Failure':'acute_liver_failure','Altered Sensorium':'altered_sensorium','Anxiety':'anxiety','Back Pain':'back_pain','Belly Pain':'belly_pain','Blackheads':'blackheads'})
+    Symptom_1 = st.selectbox('Primary Symptom',{'Select your primary symptom':0,'Abdominal Pain':'abdominal_pain','Abnormal Menstruation':'abnormal_menstruation','Acidity':'acidity','Acute Liver Failure':'acute_liver_failure','Altered Sensorium':'altered_sensorium','Anxiety':'anxiety','Back Pain':'back_pain','Belly Pain':'belly_pain','Blackheads':'blackheads','Bladder Discomfort':'bladder_discomfort','Blister':'blister','Blood in Sputum':'blood_in_sputum','Bloody Stool':'bloody_stool','Blurred and Distorted Vision':'blurred_and_distorted_vision','Breathelessness':'breathlessness','Brittle Nails':'brittle_nails','Bruising':'bruising','Burning Micturition':'burning_micturition','Chest Pain':'chest_pain','Chills':'chills','Cold hands and feets':'cold_hands_and_feets','Coma':'coma','Congestion':'congestion'})
     Symptom_2 = str(st.text_input('Secondary Symptom', 'Type Here'))
     Symptom_3 = str(st.text_input('Tertiary Symptom','Type Here'))
     result = ''
@@ -68,7 +68,7 @@ def main():
         c = result[2]
     st.success('The disease you might be having according to the three models i.e; by  random forest classifier is {}, by naive bayes classifier is {} and at last by k-nearest neighbour is {}.'.format(a,b,c))
     if st.button("About"):
-        st.text("This is just a prototype, when in need please consult a doctor.")
+        st.text("This is just a prototype, don't go by the predictions made from this app, when in need please consult a doctor.")
         st.text("Built by Shashwat Agarwal")
     
 if __name__ == "__main__":
