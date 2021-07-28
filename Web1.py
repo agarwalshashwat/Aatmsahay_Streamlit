@@ -54,7 +54,7 @@ def main():
     </div>
     '''
     st.markdown(html_temp,unsafe_allow_html=True)
-    Symptom_1 = st.selectbox('Primary Symptom',{'Select Your Primary Symptom':0,'Vomiting':'vomiting','Shivering':'shivering'})
+    Symptom_1 = st.selectbox('Primary Symptom',{'Select your primary symptom':0,'Abdominal Pain':'abdominal_pain','Abnormal Menstruation':'abnormal_menstruation','Acidity':'acidity','Acute Liver Failure':'acute_liver_failure'})
     Symptom_2 = str(st.text_input('Secondary Symptom', 'Type Here'))
     Symptom_3 = str(st.text_input('Tertiary Symptom','Type Here'))
     result = ''
