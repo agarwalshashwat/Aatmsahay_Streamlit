@@ -68,8 +68,8 @@ def main():
         c = result[2]
     st.success('The disease you might be having according to the three models i.e; by  random forest classifier is {}, by naive bayes classifier is {} and at last by k-nearest neighbour is {}.'.format(a,b,c))
     if st.button("About"):
-        st.text("This is a teamwork of Prabhat, Shagun, Shruti and Shashwat")
-        st.text("Built with Streamlit")
+        st.text("This is just a prototype, when in need please consult a doctor.")
+        st.text("Built by Shashwat Agarwal")
     
 if __name__ == "__main__":
     main()
